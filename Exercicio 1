@@ -1,0 +1,8 @@
+num1 = int(input("Escolha um número "))
+num2 = int(input("Escolha um número "))
+
+if num1 > num2 :
+    print("O número maior é ", num1)
+
+else :
+    print("O número maior é ", num2)
