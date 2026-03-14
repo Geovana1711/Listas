@@ -1,0 +1,9 @@
+num1, num2, num3 = map(int, input("Escolha três números ").split()) 
+if num1 > num2 and num1 > num3 :
+ print(f"O número {num1} é o maior")
+elif num2 > num1 and num2 > num3:
+ print(f"O número {num2} é o maior")
+else:
+ #Por eliminatória, somente o num3 pode ser o maior
+ print(f"O número {num3} é o maior")
+       
