@@ -1,0 +1,6 @@
+# Utiliarei a função sort() para colocar em decrescente, porém essa função é para coloar em ordem crescente.
+# E usarei a função reverse para espelhar o resultado
+n1, n2, n3 = map(int, input("Escolha trê números ").split())
+lista = [n1, n2, n3]
+lista.sort(reverse=True)
+print(lista)
