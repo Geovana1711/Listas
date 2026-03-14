@@ -1,0 +1,8 @@
+produto1, produto2, produto3 = map(float, input("Qual é o preço dos 3 primeiros amaciantes que você vê ").split()) 
+if produto1 < produto2 and produto2 < produto3 :
+ print("Logo, o primeiro produto será o primerio")
+elif produto2 < produto1 and produto1 < produto3:
+ print("Portanto, o segundo é o que levarei")
+else:
+ print("Sendo assim, levarei o terceiro")
+       
