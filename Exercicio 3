@@ -1,0 +1,7 @@
+genero = input("Qual é o seu gênero?Por favor, digite F para feminino e M para masculino ")
+if genero == "F":
+  print(" F - Feminino")
+elif genero == "M":
+  print("M - Masculino")
+else:
+  print("Sexo inválido")
