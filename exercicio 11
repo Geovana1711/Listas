@@ -1,0 +1,22 @@
+# Professor, eu pesquisei e utilizei dicas na IA para diminuir o meu código e tornar ele menos repetitivo
+# Porque estava ficando mutio grande e cheio de if e elif e prints.
+salario = float(input("Qual é o seu salário "))
+if salario <= 280:
+ aumento_percentual = 20
+elif salario <= 700:
+ aumento_percentual = 15
+elif salario <= 1500:
+ aumento_percentual = 10
+elif salario > 1500:
+ aumento_percentual = 5
+#Contas para realizar o print
+
+valor_reajuste = (salario * aumento_percentual)/100
+novo_salario = salario + valor_reajuste
+# print com as respostas
+
+print(f"O valor do seu salário sem o reajuste é {salario}")
+print(f"Já o percentual aplicado é {aumento_percentual}%")
+print(f"O aumento foi de {valor_reajuste}")
+print(f"O seu novo salário será de {novo_salario}")
+
