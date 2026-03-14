@@ -1,0 +1,25 @@
+nota1, nota2 = map(float, input("Diga as suas duas notas parciais ").split())
+media_notas = (nota1 + nota2)/2
+
+if media_notas > 9 and media_notas <= 10 :
+    nota = "A"
+elif media_notas > 7.5 and media_notas <= 9:
+    nota = "B"
+elif media_notas > 6.0 and media_notas <= 7.5:
+    nota = "C"
+elif media_notas > 4.0 and media_notas <= 6.0:
+    nota = "D"
+else :
+    nota = "E"
+
+#aprovação
+if nota == "A" or nota == "B" or nota == "C":
+    resultado = "APROVADO"
+elif nota == "D" or "E":
+    resultado = "REPROVADO"
+
+#Retorno na tela
+print(f"As suas notas foram {nota1, nota2}")
+print(f"A sua média foi de {media_notas}, portanto você ficou com {nota} no semestre")
+print(f"Portanto, você foi {resultado}")
+
