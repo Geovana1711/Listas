@@ -1,0 +1,7 @@
+turno = input("Qual período da faculde você estuda? Use M para matutiono, V para Vespertino  e N para Noturno ")
+if turno.upper() == "M":
+    print("Bom dia")
+elif turno.upper() == "V":
+    print("Boa tarde")
+else:
+    print("Boa noite")
