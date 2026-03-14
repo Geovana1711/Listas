@@ -1,0 +1,13 @@
+# Calculo de raizes
+print("Esse programa irá calcular as raízes de uma equação")
+a, b, c = map(int, input("Lembrando que ax²+ bx + c - Portanto, informe os valores de a,b e c ").split())
+if a == 0:
+    print("Essa equação não de segunda grau; é de primeiro, pois qualquer número vezes 0 é igual a zero, logo x² é anulado.")
+else:
+    delta = b**2 - a*4*c
+    if delta < 0:
+        print("A equação, não possui raizes reais.")
+    elif delta == 0:
+        print("Há apenas uma raiz")
+    else:
+        print("A equação possui duas raizes reais")
