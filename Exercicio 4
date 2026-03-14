@@ -1,0 +1,8 @@
+letra = input("Digite uma letra e direi se é vogal ou consoante ")
+#Professor, pesquisei como criar uma lista e criar um if else para verificar se o input é algum dos elementos da variável.
+vogal = ["a", "e", "i", "o", "u"]
+#Verificação - lower: Coloca tudo em minúsculo
+if letra.lower() in vogal:
+    print("É vogal")
+else:
+    print("É consoante")
