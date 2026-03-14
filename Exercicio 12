@@ -1,0 +1,25 @@
+#Folha de pagamento
+print("Vou calcular o valor da sua folha de pagamento ")
+valor_hora, quantidade_horas_trabalhadas = map(float, input("Qual é o valor da sua hora trabalhada?Quantas horas você trabalhou? ").split())
+salario = valor_hora * quantidade_horas_trabalhadas
+if salario <= 900:
+    imposto_renda = 0 #isento 
+elif salario <= 1500:
+    imposto_renda = 5
+elif salario <= 2500:
+    imposto_renda = 10
+elif salario > 2500:
+    imposto_renda = 20
+#Descontos IR(depende do salário) + 3% Sindicato + INSS
+# Professor, eu fiquei em dúvida se o sindicato era incluso ou não nos descontos, por isso incluí
+conta_IR = (salario * imposto_renda)/100
+conta_INSS = (salario * 0.10)
+conta_sindicato = salario * 0.03
+conta_FGTS = salario * 0.11
+conta__descontos = conta_IR + conta_sindicato + conta_INSS
+print(f"O seu salário bruto é de {salario}")
+print(f"O valor do imposto de renda pago é de {conta_IR}")
+print(f"O valor do INSS pago é de {conta_INSS}")
+print(f"O valor pago ao FGTS é de {conta_FGTS}")
+print(f"O valor total de descontos é de {conta__descontos}")
+print(f"Salário líquido é {salario - conta__descontos}")
