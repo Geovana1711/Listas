@@ -1,0 +1,9 @@
+nota1, nota2 = map(int,input("Diga a nota da primeira prova e da segunda ").split())
+conta = (nota1 + nota2)/2
+print(conta)
+if conta >= 7 and conta != 10:
+    print("Aprovado")
+elif conta == 10:
+    print("Aprovado com Distinção") 
+elif conta < 7:
+    print("Reprovado")
