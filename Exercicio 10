@@ -3,5 +3,7 @@ if turno.upper() == "M":
     print("Bom dia")
 elif turno.upper() == "V":
     print("Boa tarde")
-else:
+elif turno.upper() == "N":
     print("Boa noite")
+else:
+    print("Turno inválido")
