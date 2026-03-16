@@ -1,0 +1,41 @@
+print("--- Hipermercado Tabajara: Promoção de Carnes ---")
+print("1 - Filé Duplo\n2 - Alcatra\n3 - Picanha")
+
+opcao = input("Escolha o tipo de carne (1, 2 ou 3): ")
+kg = float(input("Quantos quilos deseja comprar? "))
+cartao = input("A compra será no Cartão Tabajara? (S/N): ").upper()
+
+if opcao == "1":
+    nome_carne = "Filé Duplo"
+    preco_ate_5 = 4.90
+    preco_acima_5 = 5.80
+elif opcao == "2":
+    nome_carne = "Alcatra"
+    preco_ate_5 = 5.90
+    preco_acima_5 = 6.80
+else:
+    nome_carne = "Picanha"
+    preco_ate_5 = 6.90
+    preco_acima_5 = 7.80
+if kg <= 5:
+    preco_total = kg * preco_ate_5
+else:
+    preco_total = kg * preco_acima_5
+desconto = 0
+if cartao == "S":
+    desconto = preco_total * 0.05
+    valor_pagar = preco_total - desconto
+    tipo_pagamento = "Cartão Tabajara"
+else:
+    valor_pagar = preco_total
+    tipo_pagamento = "Outros"
+print("\n" + "="*30)
+print("      CUPOM FISCAL")
+print("="*30)
+print(f"Carne:           {nome_carne}")
+print(f"Quantidade:      {kg} Kg")
+print(f"Preço Total:     R$ {preco_total}")
+print(f"Tipo Pagamento:  {tipo_pagamento}")
+print(f"Valor Desconto:  R$ {desconto}")
+print(f"Valor a Pagar:   R$ {valor_pagar}")
+print("="*30)
